@@ -32,4 +32,4 @@
 # crazyJoy自动每日任务
 30 7,23 * * * node /scripts/jd_crazy_joy.js >> /scripts/logs/jd_crazy_joy.log 2>&1
 #监控crazyJoy分红
-10 12 * * * node /scripts/jd_crazy_joy_bonus now #监控crazyJoy分红.js >> /scripts/logs/jd_crazy_joy_bonus.log 2>&1
+10 12 * * * node /scripts/jd_crazy_joy_bonus.js >> /scripts/logs/jd_crazy_joy_bonus.log 2>&1
