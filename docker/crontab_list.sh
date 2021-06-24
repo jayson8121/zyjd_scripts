@@ -6,3 +6,9 @@
 ##############短期活动##############
 
 ##############长期活动##############
+# 京豆变动通知
+20 10 * * * node /scripts/jd_bean_change.js >> /scripts/logs/jd_bean_change.log 2>&1
+# 领京豆额外奖励(每日可获得3京豆)
+23 1,12,22 * * * node /scripts/jd_bean_home.js >> /scripts/logs/jd_bean_home.log 2>&1
+# 签到
+7 0,17 * * * cd /scripts && node jd_bean_sign.js >> /scripts/logs/jd_bean_sign.log 2>&1
