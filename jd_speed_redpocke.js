@@ -420,7 +420,7 @@ function taskPostUrl(function_id, body) {
 
 
 function taskGetUrl(function_id, body) {
-	console.log(`https://api.m.jd.com/?appid=activities_platform&functionId=${function_id}&body=${escape(JSON.stringify(body))}&t=${+new Date()}`);
+	//console.log(`https://api.m.jd.com/?appid=activities_platform&functionId=${function_id}&body=${escape(JSON.stringify(body))}&t=${+new Date()}`);
   return {
     url: `https://api.m.jd.com/?appid=activities_platform&functionId=${function_id}&body=${escape(JSON.stringify(body))}&t=${+new Date()}`,
     headers: {
