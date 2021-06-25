@@ -57,11 +57,11 @@ async function auth() {
      $.validator='';
     let va= new validator($);
     let message= await va.run();
-	if(message){
-	if ($.isNode()) {
-          await notify.sendNotify(`${$.name}`, `京东账号${$.index} ${$.UserName}\n宠汪汪验证成功！可以跑兑换脚本了！`);
-        } 
-	}
+// 	if(message){
+// 	if ($.isNode()) {
+//           await notify.sendNotify(`${$.name}`, `京东账号${$.index} ${$.UserName}\n宠汪汪验证成功！可以跑兑换脚本了！`);
+//         } 
+// 	}
 	console.log(message);
   } catch (e) {
     $.logErr(e)
